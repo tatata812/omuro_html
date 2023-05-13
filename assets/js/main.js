@@ -25,6 +25,23 @@ $(function () {
   });
 
 
+// ヘッダー隠れる動き
+
+let startPos = 0;
+let winScrollTop = 0;
+const Header = $('.wrap-header');
+$(window).on('scroll',function(){
+  winScrollTop = $(this).scrollTop();
+  if (winScrollTop >= startPos && winScrollTop > 100) { // ここにコードを追加
+    $(Header).addClass('is-hide');
+  } else {
+    $(Header).removeClass('is-hide');
+  }
+  startPos = winScrollTop;
+});
+
+
+
   $(".main-visual-js").slick({
     autoplay: true,
     autoplaySpeed: 4000,

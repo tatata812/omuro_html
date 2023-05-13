@@ -16,6 +16,31 @@
   }
 }
 
+/* normal */
+@font-face {
+  font-family: 'IBMPlexSansJP';
+  src: url('../fonts/IBMPlexSansJP-Regular.ttf') format('truetype');
+  font-weight: normal; 
+}
+/* bold */
+@font-face {
+  font-family: 'IBMPlexSansJP';
+  src: url('../fontsIBMPlexSansJP-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+/* light */
+@font-face {
+  font-family: 'IBMPlexSansJP';
+  src: url('../fonts/IBMPlexSansJP-ExtraLight.ttf') format('truetype');
+  font-style: light; 
+}
+
+/* 英数 */
+@font-face {
+  font-family: 'Arsenal-Regular';
+  src: url('../fonts/Arsenal-Regular.ttf') format('truetype');
+}
+
 
 * {
   word-break: break-word;
@@ -23,22 +48,22 @@
 }
 
 body {
-  font-family: 'Optima', 'Segoe UI', "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-family: 'IBMPlexSansJP', "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: bold;
   line-height: 1.8;
+  letter-spacing: 0.1em;
 
 }
 
 p {
-  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+  font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
   color: #080808;
 
 }
 
 a {
-  font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
+  font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
   color: #080808;
-
-
 
   &:hover {
     cursor: pointer;
@@ -53,7 +78,7 @@ a:hover {
 img {
   width: 100%;
   height: auto;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 ul,
@@ -82,35 +107,14 @@ li {
 
 
 .main {
-  padding: 148px 0 0;
+  padding: 100px 0 0;
 
-
-  @media screen and (max-width: 1550px) {
-    padding: 132px 0 0 0;
-
-  }
-
-  @media screen and (max-width: 1250px) {
-    padding: 120px 0 0 0;
-
-  }
-
-  @media screen and (max-width: 1120px) {
-    padding: 110px 0 0 0;
-
-  }
-
-  @include pc {
-    padding: 104px 0 0 0;
-  }
 
   @include tab {
-    padding: 98px 0 0 0;
+    padding: 62px 0 0 0;
   }
 
-  @include sp {
-    padding: 88px 0 0 0;
-  }
+
 
 
   &__section-inner {
@@ -392,6 +396,26 @@ li {
 
   &.action {
     transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fadeIn-anime01 {
+  animation-name: fadeInAnime;
+  animation-delay: 0.7s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
     opacity: 1;
   }
 }
