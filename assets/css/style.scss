@@ -250,7 +250,7 @@ footer
  ================================= */
 
 .footer {
-  background-color: #e0e0e0;
+  background-color: #0a025e;
   padding: 40px 8px 0;
 
   &__top {
@@ -271,7 +271,7 @@ footer
 
   &__ttl {
     max-width: 300px;
-   
+
   }
 
   &__logo {
@@ -285,6 +285,8 @@ footer
 
   &__tel {
     display: block;
+    color: #fff;
+
   }
 
   &__tel-span {
@@ -294,6 +296,7 @@ footer
   &__address {
     font-size: 12px;
     display: block;
+    color: #fff;
 
 
   }
@@ -320,6 +323,9 @@ footer
 
   &__sns-item {
     width: 18px;
+    i {
+      color: #fff;
+    }
   }
 
   &__nev {
@@ -337,10 +343,12 @@ footer
   }
 
   &__nav-item {
-    border-left: 1px solid #333;
+    border-left: 1px solid #fff;
     padding: 0 16px;
     line-height: 18px;
     font-size: 13px;
+    color: #fff;
+
 
     @include pc {
       padding: 0 8px;
@@ -351,7 +359,7 @@ footer
     }
 
     &:last-child {
-      border-right: 1px solid #333;
+      border-right: 1px solid #fff;
 
       @include sp {
         border: none;
@@ -380,6 +388,8 @@ footer
   &__coppy {
     text-align: center;
     font-size: 12px;
+    color: #fff;
+
   }
 
 
@@ -739,8 +749,12 @@ top-works
 
   &__subttl {
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     margin: 0 0 40px;
+
+    @include sp{
+      font-size: 20px;
+    }
   }
 
   &__right {
@@ -756,15 +770,11 @@ top-works
 
   &__right-btn {
     display: block;
-    width: 160px;
-    margin: 0 0 0 auto;
-    border: 1px solid #9fa0a0;
-    text-align: center;
-    padding: 8px;
-    font-size: 13px;
+   text-align: right;
+    font-size: 14px;
+    margin: 0 24px 0 0;
 
     @include tab {
-      margin: 0 auto;
     }
   }
 
@@ -844,13 +854,13 @@ top-contact
  ================================= */
 
 .single-works {
+  background-color: #f8f8f8;
 
   &__section {
-    margin: 60px 0 80px;
-    padding: 0 12px;
+    padding: 20px 12px 80px;
 
-    @include tab{
-      margin: 0 0 60px;
+    @include tab {
+      padding: 0px 12px 60px;
 
     }
   }
@@ -861,6 +871,8 @@ top-contact
     padding: 0 0 4px;
     margin: 0 0 12px;
     text-align: center;
+    margin: 0 0 24px 0;
+
 
     @include sp {
       font-size: 20px;
@@ -868,9 +880,16 @@ top-contact
     }
   }
 
+  &__lead {
+    text-align: center;
+    font-size: 15px;
+    max-width: 540px;
+    margin: 0 auto 12px;
+  }
+
   &__cat {
     text-align: center;
-    margin: 0 0 60px;
+    margin: 0 0 80px;
 
     @include sp {
       margin: 0 0 40px;
@@ -880,13 +899,13 @@ top-contact
 
   &__cat-span {
     display: inline-block;
-    background-color: #41809a;
+    background-color: #0a025e;
     color: #fff;
     padding: 0 8px;
     font-size: 16px;
 
-    @include sp{
-    font-size: 13px;
+    @include sp {
+      font-size: 13px;
     }
   }
 
@@ -907,6 +926,7 @@ top-contact
 
   &__left {
     width: 50%;
+    
 
 
     @include tab {
@@ -921,34 +941,18 @@ top-contact
         width: 4px;
       }
     }
-
-    .slick-prev {
-      left: -18px;
-      z-index: 10;
-
-      @include sp {
-        display: none;
-      }
-    }
-
-    .slick-next {
-      z-index: 10;
-      right: -5px;
-
-      @include sp {
-        display: none;
-      }
-    }
   }
 
   &__left-img {
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   }
 
   &__right {
 
     width: 50%;
+
     @include tab {
       width: 100%;
       margin: 0 0 16px;
@@ -965,8 +969,6 @@ top-contact
       flex-wrap: wrap;
       gap: 16px;
       margin: 0 auto 40px;
-
-
     }
   }
 
@@ -976,7 +978,7 @@ top-contact
     max-height: 180px;
     overflow: hidden;
 
-    @include sp{
+    @include sp {
       max-height: 150px;
     }
 
@@ -1001,44 +1003,121 @@ top-contact
 
 
 /* =================================
-
+実績一覧
  ================================= */
 
-.aaa {
+.archive-works {
+  background-color: #f8f8f8;
 
-  &__ {}
+  &__ttl {}
 
-  &__ {}
+  &__subttl {}
 
-  &__ {}
+  &__section {
+    padding: 80px 12px;
 
-  &__ {}
+    @include tab {
+      padding: 40px 12px;
 
-  &__ {}
+    }
+  }
 
-  &__ {}
+  &__box {
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
 
-  &__ {}
+    @include pc {
+      gap: 30px;
+    }
+  
+    @include tab {
+      flex-direction: column;
+      align-items: center;    
+      margin: 0 auto 40px;
 
-  &__ {}
+    }
+  }
 
-  &__ {}
 
-  &__ {}
 
-  &__ {}
 
-  &__ {}
+&__item {
+  background-color: #fff;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: calc(100% / 3 - 40px);
 
-  &__ {}
+  @include pc {
+    width: calc(100% / 3 - 20px);
 
-  &__ {}
+  }
 
-  &__ {}
+  @include tab {
+    width: 100%;
+    max-width: 400px;
+  }
+}
 
-  &__ {}
+&__img-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 220px;
+}
 
-  &__ {}
+&__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+&__cat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0a025e;
+  padding: 4px 8px;
+  color: #fff;
+  font-size: 12px;
+}
+
+&__item-ttl {
+  padding: 12px 12px 0;
+
+}
+
+&__item-lead {
+  padding: 12px;
+  font-size: 14px;
+}
+
+&__pager {
+  text-align: center;
+}
+
+&__ {}
+
+&__ {}
+
+&__ {}
+
+&__ {}
+
+&__ {}
+
+&__ {}
+
+&__ {}
+
+&__ {}
 
 
 }

@@ -175,29 +175,46 @@ li {
 
 // Slick設定
 
-.slick-prev:before {
-  background: url(../img/top/main-visual-arrow_l.png) !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  font-size: 36px;
-  opacity: 1 !important;
-
-}
-
-.slick-next:before {
-  background: url(../img/top/main-visual-arrow_r.png) !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-  font-size: 36px;
-  opacity: 1 !important;
-
-
-}
 
 .slick-dots li.slick-active button:before {
   color: #1b1464 !important;
   opacity: 1 !important;
 
+}
+
+// ページタイトル
+
+.page-ttl {
+
+  font-family: "Arsenal-Regular", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+  text-align: center;
+  font-size: clamp(1.625rem, 1.398rem + 1.14vw, 2.25rem);
+  letter-spacing: 0.01em;
+  margin: 0 0 12px;
+  line-height: 1;
+  color: #9fa0a0;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 40px 0 0;
+
+  @include sp{
+    padding: 24px 0 0;
+  }
+
+  &--concept {
+    color: #41809a;
+  }
+
+  &--menu {
+    color: #b17f8c;
+  }
+
+  &--access {
+    color: #a9917b;
+  }
+}
+
+.page-subttl {
+  text-align: center;
 }
 
 // ボタンスタイル
@@ -279,6 +296,7 @@ li {
     margin: 24px 0 20px;
     font-weight: bold;
     border: 1px solid #949494;
+    background-color: #fff;
     display: inline-block;
     padding: 0 8px;
 
@@ -291,6 +309,7 @@ li {
     font-size: 18px;
     margin: 24px 0 16px;
     font-weight: bold;
+
     @include sp {
       font-size: 16px;
     }
