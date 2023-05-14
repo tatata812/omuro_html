@@ -90,16 +90,17 @@ $(window).on('scroll',function(){
   });
 
   // 客室詳細
-  $slide = $('.room-main-js');
-  $navigation = $('.room-main__bottom-img');
+  $slide = $('.page-works-js');
+  $navigation = $('.page-works__bottom-img');
 
   $slide.slick({ //slickスライダー作成
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     fade: true,
     dots:true,
+    adaptiveHeight: true,
   });
   $navigation.each(function (index) { //サムネイルに連番付与属性
     $(this).attr('data-number', index);
