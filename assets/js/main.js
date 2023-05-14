@@ -89,9 +89,9 @@ $(window).on('scroll',function(){
     ],
   });
 
-  // 客室詳細
-  $slide = $('.page-works-js');
-  $navigation = $('.page-works__bottom-img');
+  // 実績詳細
+  $slide = $('.single-works-js');
+  $navigation = $('.single-works__bottom-img');
 
   $slide.slick({ //slickスライダー作成
     infinite: true,

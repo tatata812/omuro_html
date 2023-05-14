@@ -983,11 +983,6 @@ footer
 .footer__ttl {
   max-width: 300px;
 }
-@media (max-width: 820px) {
-  .footer__ttl {
-    max-width: 240px;
-  }
-}
 .footer__logo {
   display: block;
   margin: 0 0 24px;
@@ -998,7 +993,6 @@ footer
   }
 }
 .footer__tel {
-  margin: 0 0 0 32px;
   display: block;
 }
 .footer__tel-span {
@@ -1006,7 +1000,6 @@ footer
 }
 .footer__address {
   font-size: 12px;
-  margin: 0 0 0 32px;
   display: block;
 }
 .footer__menu {
@@ -1034,11 +1027,11 @@ footer
 .footer__nev {
   display: flex;
   justify-content: center;
-  margin: 0 0 32px;
+  margin: 0 0 24px;
 }
 @media (max-width: 1120px) {
   .footer__nev {
-    margin: 12px 0 32px;
+    margin: 12px 0 24px;
   }
 }
 @media (max-width: 820px) {
@@ -1471,117 +1464,118 @@ top-contact
 /* =================================
 実績　詳細
  ================================= */
-.page-works__section {
+.single-works__section {
   margin: 60px 0 80px;
   padding: 0 12px;
 }
 @media (max-width: 820px) {
-  .page-works__section {
+  .single-works__section {
     margin: 0 0 60px;
   }
 }
-.page-works__top-wrap {
-  display: flex;
-  gap: 40px;
-  max-width: 1400px;
-  margin: 0 auto 40px;
-}
-@media (max-width: 820px) {
-  .page-works__top-wrap {
-    flex-direction: column;
-    margin: 0 auto 24px;
-  }
-}
-.page-works__left {
-  width: 50%;
-}
-@media (max-width: 820px) {
-  .page-works__left {
-    order: 1;
-    width: 100%;
-  }
-}
-.page-works__left .slick-dots li {
-  width: 4px;
-}
-.page-works__left .slick-prev {
-  left: -18px;
-  z-index: 10;
-}
-@media (max-width: 600px) {
-  .page-works__left .slick-prev {
-    display: none;
-  }
-}
-.page-works__left .slick-next {
-  z-index: 10;
-  right: -5px;
-}
-@media (max-width: 600px) {
-  .page-works__left .slick-next {
-    display: none;
-  }
-}
-.page-works__left-img {
-  overflow: hidden;
-}
-.page-works__right {
-  width: 50%;
-}
-@media (max-width: 820px) {
-  .page-works__right {
-    width: 100%;
-    margin: 0 0 16px;
-  }
-}
-.page-works__ttl {
-  font-size: 24px;
+.single-works__ttl {
+  font-size: 28px;
   font-weight: 600;
   padding: 0 0 4px;
-  margin: 0 0 40px;
+  margin: 0 0 60px;
   text-align: center;
 }
 @media (max-width: 600px) {
-  .page-works__ttl {
+  .single-works__ttl {
     font-size: 18px;
     margin: 0 0 12px 0;
   }
 }
-.page-works__bottom-wrap {
+.single-works__top-wrap {
+  display: flex;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto 80px;
+}
+@media (max-width: 820px) {
+  .single-works__top-wrap {
+    flex-direction: column;
+    margin: 0 auto 24px;
+  }
+}
+.single-works__left {
+  width: 50%;
+}
+@media (max-width: 820px) {
+  .single-works__left {
+    order: 1;
+    width: 100%;
+  }
+}
+.single-works__left .slick-dots li {
+  width: 4px;
+}
+.single-works__left .slick-prev {
+  left: -18px;
+  z-index: 10;
+}
+@media (max-width: 600px) {
+  .single-works__left .slick-prev {
+    display: none;
+  }
+}
+.single-works__left .slick-next {
+  z-index: 10;
+  right: -5px;
+}
+@media (max-width: 600px) {
+  .single-works__left .slick-next {
+    display: none;
+  }
+}
+.single-works__left-img {
+  overflow: hidden;
+}
+.single-works__right {
+  width: 50%;
+}
+@media (max-width: 820px) {
+  .single-works__right {
+    width: 100%;
+    margin: 0 0 16px;
+  }
+}
+.single-works__bottom-wrap {
   display: flex;
   gap: 12px;
   max-width: 1200px;
-  margin: 0 auto 60px;
+  margin: 0 auto 80px;
 }
 @media (max-width: 820px) {
-  .page-works__bottom-wrap {
+  .single-works__bottom-wrap {
     flex-wrap: wrap;
     gap: 16px;
+    margin: 0 auto 40px;
   }
 }
-.page-works__bottom-img {
+.single-works__bottom-img {
   cursor: pointer;
   width: calc(25% - 8px);
   max-height: 180px;
   overflow: hidden;
 }
 @media (max-width: 600px) {
-  .page-works__bottom-img {
+  .single-works__bottom-img {
     max-height: 150px;
   }
 }
 @media (max-width: 820px) {
-  .page-works__bottom-img {
+  .single-works__bottom-img {
     width: calc(50% - 8px);
     margin: 0 0 16px;
   }
 }
-.page-works__bottom-img img {
+.single-works__bottom-img img {
   opacity: 0.5;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page-works__bottom-img.current img {
+.single-works__bottom-img.current img {
   opacity: 1;
 }
 
