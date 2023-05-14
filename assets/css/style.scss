@@ -51,17 +51,20 @@ header
 
   &__breadcrumb {
     font-size: 12px;
-    max-width: 1200px;
     margin: 0 auto;
     color: #777777;
     position: absolute;
-    bottom: -28px;
-    left: 10%;
+    bottom: -34px;
+    left: 15%;
     transform: translateX(-50%);
 
-    @include tab {
+    @media screen and (max-width: 1400px) {
       left: 12px;
       transform: translateX(0);
+    }
+
+    @include tab{
+      bottom: -30px;
 
     }
   }
@@ -1010,7 +1013,7 @@ top-contact
   background-color: #f8f8f8;
   padding: 60px 0 0 0;
 
-  @include tab{
+  @include tab {
     padding: 40px 0 0 0;
   }
 
