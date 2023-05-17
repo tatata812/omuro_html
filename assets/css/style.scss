@@ -1,5 +1,5 @@
 @use "config";
-@use "subpage";
+
 
 @mixin sp {
   @media (max-width:(600px)) {
@@ -80,11 +80,6 @@ header
     @media screen and (max-width: 1350px) {
       padding: 16px 8px 16px;
     }
-
-
-
-
-
 
     @include sp {
       padding: 4px 8px;
@@ -321,7 +316,6 @@ footer
     @include tab {
       padding: 6px 24px 0;
     }
-
   }
 
   &__sns-item {
@@ -386,7 +380,6 @@ footer
     @include sp {
       padding: 12px 0 60px;
     }
-
   }
 
   &__coppy {
@@ -411,7 +404,6 @@ footer
     a:hover {
       opacity: 1;
     }
-
   }
 
 
@@ -434,13 +426,11 @@ footer
       color: rgb(109, 108, 108);
       display: inline-block;
       line-height: 20px;
-
     }
 
     @include tab {
       display: none;
     }
-
   }
 }
 
@@ -488,10 +478,7 @@ page-top
     @include tab {
       margin: 0 0 40px;
     }
-
   }
-
-
 }
 
 /* =================================
@@ -705,7 +692,6 @@ top-menu
     @include sp {
       font-size: 14px;
     }
-
   }
 }
 
@@ -739,7 +725,6 @@ top-works
       width: 100%;
       max-width: 400px;
       min-width: auto;
-
     }
   }
 
@@ -780,13 +765,6 @@ top-works
 
     @include tab {}
   }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
 }
 
 /* =================================
@@ -834,8 +812,6 @@ top-access
       display: none;
     }
   }
-
-  &__ {}
 }
 
 /* =================================
@@ -926,11 +902,8 @@ top-contact
   }
 
 
-
   &__left {
     width: 50%;
-
-
 
     @include tab {
       order: 1;
@@ -1111,64 +1084,5 @@ top-contact
     text-align: center;
   }
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
 }
 
-/* =================================
-
- ================================= */
-
-.aaa {
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
-}
