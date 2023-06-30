@@ -1109,14 +1109,39 @@ LP（デザクレ）
 
     }
   }
+}
 
-  &__ {}
+// お問い合わせボタン
 
-  &__ {}
+.original-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 32px;
+  border-radius: 0px;
+  max-width: 480px;
+  padding: 24px;
+  font-weight: bold;
+  border: 2px solid #333333;
+  transition: 0.3s;
+  box-shadow: 5px 5px 0px 0px rgba(109, 108, 108, 1);
+  background-color: #4282d6;
+  margin: 0 auto;
 
-  &__ {}
+@include tab{
+  padding: 12px;
+  font-size: 22px;
 
-  &__ {}
+}
+}
+
+.original-button:hover {
+  box-shadow: 0 0 #333;
+  color: #fff;
+  background-color: #333;
 }
 
 
@@ -1211,7 +1236,7 @@ LP（デザクレ）
   }
 
   &__img {
-    width: 180px;
+    width: 260px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1222,7 +1247,7 @@ LP（デザクレ）
     }
 
     &--3 {
-      width: 220px;
+      width: 240px;
     }
   }
 
@@ -1356,13 +1381,13 @@ LP（デザクレ）
   }
 
   &__img01 {
-    max-width: 680px;
+    max-width: 600px;
     margin: 28px auto 0;
   }
 
   &__img02 {
     max-width: 1080px;
-    margin: 28px auto 0;
+    margin: 28px auto 40px;
   }
 }
 
@@ -1422,10 +1447,10 @@ LP（デザクレ）
 
   &__text-wrap {
     max-width: 1280px;
-    margin: 80px auto 0;
+    margin: 80px auto 40px;
 
     @include sp {
-      margin: 40px auto 0;
+      margin: 40px auto;
 
     }
   }
