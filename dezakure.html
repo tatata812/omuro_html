@@ -1,0 +1,278 @@
+<!-- <?php
+  $des="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。"
+  ; ?> -->
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
+  <title>デザクレ</title>
+  <meta name="description" content="<?php echo $des; ?>">
+  <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
+  <meta name="robots" content="none">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:description" content="<?php echo $des; ?>">
+  <meta property="og:site_name"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/fb.jpg">
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="<?php wp_title( '-', true, 'right' ); ?><?php bloginfo( 'name' ); ?> | <?php echo $des; ?>">
+  <meta name="twitter:description" content="<?php echo $des; ?>">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="assets/css/html5reset-1.6.1.css">
+  <link rel="stylesheet" href="assets/css/style.css?20230220">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body class="wrap">
+
+  <header class="header wrap-header">
+    <div class="header__inner">
+      <h1 class="header__ttl"><a href="index.html"><img src="assets/img/logo.png" alt="Disgn＆Printing印刷市場"></a>
+      </h1>
+      <nav>
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="" class="header__nav-link">HOME</a></li>
+          <li class="header__nav-item"><a href="" class="header__nav-link">CONCEPT</a></li>
+          <li class="header__nav-item"><a href="" class="header__nav-link">MENU</a></li>
+          <li class="header__nav-item"><a href="works-archive.html" class="header__nav-link">WORKS</a></li>
+          <li class="header__nav-item"><a href="" class="header__nav-link">ACCESS</a></li>
+          <li class="header__nav-item"><a href="" class="header__nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="header__open-btn">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="header-sp">
+      <div class="header-sp__inner">
+        <nav>
+          <ul class="header-sp__nav-list">
+            <li class="header-sp__nav-item"><a href="" class="header-sp__nav-link">メニュー</a></li>
+            <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+            <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+            <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+            <li class="header-sp__nav-item"><a href="#" class="header-sp__nav-link">メニュー</a></li>
+            <li class="header-sp__nav-item"><a href="" class="header-sp__nav-link">メニュー</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="main page-dezakure">
+
+
+    <section class="main-visual dezakure-main">
+      <div class="main-visual__img fadeIn-anime01"><img src="assets/img/main-visual.png"></div>
+    </section>
+
+
+
+    <section class="dezakure-concept  page-dezakure__section">
+      <h2 class="page-ttl page-ttl--dezakure page-dezakure__ttl">デザクレとは？</h2>
+      <p class="dezakure-concept__lead-text">デザインの定額サービスです。<br>
+        あらゆるデザイン業務にスピーディに対応いたします！</p>
+      
+      <div class="dezakure-concept__box fade-in-js">
+        <div class="dezakure-concept__item">
+          <h3 class="dezakure-concept__item-ttl">
+            <span class="dezakure-concept__item-ttl-span">様々なデザインを<br>定額でプロにお任せ！！</span></h3>
+          <div class="dezakure-concept__img-wrap"><img class="dezakure-concept__img" src="assets/img/top-order-img01.png"></div>
+          <p class="dezakure-concept__text">チラシ、パンフレット、POP、名刺、HP、ECサイト、SNS運用、動画、伝票、封筒、看板…<br>
+            進めたいものはたくさんあるけどなかなか手が回らない。<br>
+            その課題問題をプロのデザイナーに任せませんか？<br>
+            あなたに代わって解消！！をお手伝いします。</p>
+        </div>
+        <div class="dezakure-concept__item">
+          <h3 class="dezakure-concept__item-ttl"><span class="dezakure-concept__item-ttl-span">定額クレジット制だから<br>予算を気にせず依頼できる！</span></h3>
+          <div class="dezakure-concept__img-wrap"><img class="dezakure-concept__img dezakure-concept__img--2"
+              src="assets/img/top-order-img02.png"></div>
+          <p class="dezakure-concept__text">定額制だから、その都度発生する料金はありません。<br>
+            外注するための見積する手間がなく、予算を気にせず安心してご依頼いただけます。<span class="dezakure-concept__text-span">※クレジット消費により加算する場合があります。</span></p>
+        </div>
+        <div class="dezakure-concept__item">
+          <h3 class="dezakure-concept__item-ttl"><span class="dezakure-concept__item-ttl-span">実績20000件以上から<br>生まれたサービスを利用できる！</span></h3>
+          <div class="dezakure-concept__img-wrap"><img class="dezakure-concept__img dezakure-concept__img--3"
+              src="assets/img/top-order-img03.png"></div>
+          <p class="dezakure-concept__text">創業５５年、携わったお客様からのご要望より生まれたサービスを選ぶことができます。<br>
+            ７事業、１６商品、１００項目以上!!
+            <span class="dezakure-concept__text-span">※都度増えています。<br>把握できておらず、申し訳ありません。</span></p>
+            
+        </div>
+      </div>
+    </section>
+
+
+    <section class="dezakure-question page-dezakure__section">
+      <h2 class="dezakure-question__ttl"><img alt="こんなお悩みありませんか？" src="assets/img/question-ttl.png"></h2>
+      <ul class="dezakure-question__list">
+        <li class="dezakure-question__list-item">事務員にデザイン作業などお願いしており、本業の時間が削られている。</li>
+        <li class="dezakure-question__list-item">自社の通販サイト用に効果的なバナーを作りたい。</li>
+        <li class="dezakure-question__list-item">都度外注先に見積りを作って依頼をかけるのが面倒。</li>
+        <li class="dezakure-question__list-item">普段外注している制作費を削減したい。</li>
+        <li class="dezakure-question__list-item">ＬＰデザインができるデザイナーを確保したい。</li>
+        <li class="dezakure-question__list-item">デザイン知識を持った社員がいない。</li>
+        <li class="dezakure-question__list-item">なんとなく人手不足だけど、クオリティや期限を担保できる依頼先がない。</li>
+        <li class="dezakure-question__list-item">新サービスを立ち上げたばかりで、様々なデザインを作らなければいけない。</li>
+        <li class="dezakure-question__list-item">即戦力のデザイナーを探しているが、採用が困難な状況。</li>
+      </ul>
+      
+
+    </section>
+
+    <section class="top-menu page-dezakure__section">
+      <h2 class="page-top__section-ttl  page-top__section-ttl--menu">MENU</h2>
+      <p class="page-top__section-subttl">ご希望のメニューをお選びください</p>
+      <div class="top-menu__box fade-in-js">
+        <a href="#" class="top-menu__item">
+          <div class="top-menu__img"><img src="assets/img/top-menu01.png"></div>
+          <h3 class="top-menu__subttl">名刺<span class="top-menu__span">BUSINESS CARD</span></h3>
+        </a>
+        <a href="#" class="top-menu__item">
+          <div class="top-menu__img"><img src="assets/img/top-menu02.png"></div>
+          <h3 class="top-menu__subttl">チラシ<span class="top-menu__span">POSTER</span></h3>
+        </a>
+        <a href="#" class="top-menu__item">
+          <div class="top-menu__img"><img src="assets/img/top-menu03.png"></div>
+          <h3 class="top-menu__subttl">ポスター<span class="top-menu__span">POSTER</span></h3>
+        </a>
+        <a href="#" class="top-menu__item">
+          <div class="top-menu__img"><img src="assets/img/top-menu04.png"></div>
+          <h3 class="top-menu__subttl">リーフレット
+            <span class="top-menu__span">LEAFLET</span></h3>
+        </a>
+        <a href="#" class="top-menu__item">
+          <div class="top-menu__img"><img src="assets/img/top-menu05.png"></div>
+          <h3 class="top-menu__subttl">DM・はがき
+            <span class="top-menu__span">DM・POSTCARD</span></h3>
+        </a>
+        <a href="#" class="top-menu__item">
+          <div class="top-menu__img"><img src="assets/img/top-menu06.png"></div>
+          <h3 class="top-menu__subttl">封筒
+            <span class="top-menu__span">ENVELOPE</span></h3>
+        </a>
+      </div>
+
+      <a href="#" class="btn-style btn-style--menu">その他のデザイン<span class="btn-style__span">OTHER</span></a>
+
+    </section>
+
+
+    <section class="top-works page-dezakure__section">
+      <h2 class="page-top__section-ttl">WORKS</h2>
+      <p class="page-top__section-subttl">作成実續</p>
+      <h3 class="top-works__subttl fade-in-js">クライアント様</h3>
+      <div class="top-works__box fade-in-js">
+        <div class="top-works__left">
+          <div class="top-works__img-wrap"><img src="assets/img/thumbnail01.jpg" class="top-works__img"></div>
+        </div>
+        <div class="top-works page-top__right">
+          <div class="top-works__content works-style">
+            <h2>デザインコンセプト</h2>
+            <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+            <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+            <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+            <h2>お客様の声</h2>
+            <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+          </div>
+          <a href="works-single.html" class="top-works__right-btn">詳細はこちら ></a>
+        </div>
+      </div>
+
+      <a href="works-archive.html" class="btn-style">その他の実績<span class="btn-style__span">OTHER</span></a>
+
+
+    </section>
+
+    <section class="top-access page-dezakure__section">
+      <h2 class="page-top__section-ttl page-top__section-ttl--access">ACCESS</h2>
+      <p class="page-top__section-subttl">アクセス</p>
+
+      <div class="top-access__map-wrap">
+        <div class="top-access__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3256.6801442215356!2d139.149831!3d35.289078!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019a42775a064e3%3A0xfd8927badf6a4425!2z5pel5pys44CB44CSMjUwLTA4NjUg56We5aWI5bed55yM5bCP55Sw5Y6f5biC6JOu5q2j5a-677yR77yS77yU4oiS77yS!5e0!3m2!1sja!2sus!4v1684034091593!5m2!1sja!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <p class="top-access__text">
+        (有)おむろ・アカデミー　<br class="sp-block">印刷市場（いんさついちば）<br>
+        TEL：<a href="tel:050-3468-7281">050-3468-7281</a><span class="top-access__span">／</span><br
+          class="sp-block">FAX：0465-38-0660<br>
+        E-Mail：<a
+          href="m&#97;i&#108;t&#111;:&#109;&#97;&#105;&#110;&#64;&#112;r&#105;n&#116;&#45;&#105;&#99;&#104;&#105;b&#97;&#46;&#106;&#112;">&#109;&#97;&#105;&#110;&#64;&#112;r&#105;n&#116;&#45;&#105;&#99;&#104;&#105;b&#97;&#46;&#106;&#112;</a><br>
+        住所：〒250-0865　<br class="sp-block">神奈川県小田原市蓮正寺124-2
+      </p>
+
+    </section>
+
+    <section class="top-contact page-dezakure__section">
+      <h2 class="page-top__section-ttl">CONTACT</h2>
+      <p class="page-top__section-subttl">お問い合わせ</p>
+      <p class="top-contact__text">ご相談・お見積りは無料です。<br class="sp-block">お気軽にお問い合わせください。</p>
+      <a href="#" class="btn-style">お問い合わせはこちら<span class="btn-style__span">Contact information</span></a>
+
+
+    </section>
+
+
+  </div>
+  <!--main end-->
+
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__ttl">
+        <a href="index.html" class="footer__logo"><img src="assets/img/logo-w.png" alt="Disgn＆Printing印刷市場"></a>
+        <a href="tel:050-3468-7281" class="footer__tel"><span class="footer__tel-span">TEL.</span>050-3468-7281</a>
+        <p class="footer__address">〒250-0865 <br>神奈川県小田原市蓮正寺 124-2</p>
+      </div>
+      <div class="footer__sns">
+        <a href="https://www.facebook.com/printichiba/" class="footer__sns-item" target="_blank" rel="noopener"><i
+            class="fab fa-facebook-square"></i></a>
+      </div>
+    </div>
+    <nav class="footer__nev">
+      <a href="#" class="footer__nav-item">メニュー</a>
+      <a href="#" class="footer__nav-item">作成実績</a>
+      <a href="#" class="footer__nav-item">お問い合わせ</a>
+      <a href="#" class="footer__nav-item">このサイトについて</a>
+      <a href="#" class="footer__nav-item">個人情報保護方針</a>
+      <a href="#" class="footer__nav-item">サイトマップ</a>
+    </nav>
+    <div class="footer__bottom">
+      <p class="footer__coppy">Copyright © 有限会社おむろ・アカデミー 2023</p>
+    </div>
+    <div class="footer__sp-menu sp-block">
+      <a href="#"></a>
+    </div>
+    <div class="footer__sp-menu">
+      <a href="tel:050-3468-7281"><img src="assets/img/sp-menu01.jpg"></a>
+      <a href="#" target="_blank"><img src="assets/img/sp-menu02.jpg" alt="お問い合わせ"></a>
+      <a href="#" target="_blank"><img src="assets/img/sp-menu03.jpg" alt="TOPへ" class="top-to-js"></a>
+    </div>
+    <div class="footer__scroll-btn top-to-js"><i class="fas fa-angle-double-up"></i></div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/main.js">
+  </script>
+</body>
+
+</html>
