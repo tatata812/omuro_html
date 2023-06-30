@@ -1611,7 +1611,7 @@ LP（デザクレ）
 }
 .dezakure-point__text-wrap {
   max-width: 1280px;
-  margin: 80px auto 40px;
+  margin: 80px auto 80px;
 }
 @media (max-width: 600px) {
   .dezakure-point__text-wrap {
