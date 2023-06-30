@@ -63,7 +63,7 @@ header
       transform: translateX(0);
     }
 
-    @include tab{
+    @include tab {
       bottom: -30px;
 
     }
@@ -1104,7 +1104,7 @@ LP（デザクレ）
   &__ttl {
     margin: 0 0 80px;
 
-    @include tab{
+    @include tab {
       margin: 0 0 40px;
 
     }
@@ -1123,6 +1123,7 @@ LP（デザクレ）
 //  メインビジュアル
 .dezakure-main {
   background-color: #e7d7df;
+
   &__ {}
 
   &__ {}
@@ -1142,7 +1143,7 @@ LP（デザクレ）
     text-align: center;
     font-size: 22px;
 
-    @include tab{
+    @include tab {
       font-size: 18px;
 
     }
@@ -1182,7 +1183,7 @@ LP（デザクレ）
     }
   }
 
- 
+
 
   &__item-ttl {
     font-size: 20px;
@@ -1190,13 +1191,13 @@ LP（デザクレ）
     font-weight: 900;
 
     @include pc {
-      font-size: 16px;
+      font-size: 18px;
 
     }
   }
 
   &__item-ttl-span {
-    background:linear-gradient(transparent 60%, #ff6 60%);
+    background: linear-gradient(transparent 60%, #ff6 60%);
   }
 
   &__img-wrap {
@@ -1229,7 +1230,7 @@ LP（デザクレ）
     max-width: 320px;
     font-size: 16px;
 
-    @include tab{
+    @include tab {
       font-size: 15px;
 
     }
@@ -1250,7 +1251,7 @@ LP（デザクレ）
 
   &__ttl {
     max-width: 800px;
-    margin:0 auto 24px;
+    margin: 0 auto -10px;
   }
 
   &__ttl-img {}
@@ -1262,6 +1263,12 @@ LP（デザクレ）
     border-radius: 28px;
     padding: 28px;
 
+    @include tab {
+      border-radius: 16px;
+      padding: 16px;
+
+    }
+
   }
 
   &__list-item {
@@ -1269,19 +1276,273 @@ LP（デザクレ）
     position: relative;
     margin: 0 0 8px 30px;
 
+    @include tab {
+      font-size: 16px;
+      margin: 0 0 8px 30px;
+
+    }
+
     &:before {
-      content:"";
+      content: "";
       background: url(../img/question-list.png) no-repeat;
       display: inline-block;
-      width: 20px;/*画像の幅*/
-      height: 20px;/*画像の高さ*/
+      width: 20px;
+      /*画像の幅*/
+      height: 20px;
+      /*画像の高さ*/
       background-size: contain;
       vertical-align: middle;
       position: absolute;
       left: -27px;
-    top: 9px;
+      top: 9px;
+
+      @include tab {
+        top: 6px;
+
       }
-  
+    }
+  }
+
+  &__ {}
+}
+
+//  解決します
+.dezakure-solving {
+  padding: 80px 12px 40px;
+
+  &__text {
+    font-size: 32px;
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+
+    @include tab {
+      font-size: 18px;
+      padding: 0 16px;
+
+    }
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "";
+      width: 1px;
+      height: 100%;
+      background: #000;
+      border-radius: 3px;
+      transform: rotate(-25deg);
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: #000;
+      border-radius: 3px;
+      transform: rotate(25deg);
+    }
+  }
+
+  &__text-span {
+    background: linear-gradient(transparent 60%, #ff6 60%);
+
+  }
+
+  &__text-wrap {
+    text-align: center;
+  }
+}
+
+//  選ばれるポイント
+.dezakure-point {
+
+  &__ttl {
+    margin: 0 0 48px;
+  }
+
+  &__item {
+    max-width: 900px;
+    margin: 0 auto 60px;
+  }
+
+  &__item-ttl {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 24px;
+
+    @include tab{
+      margin: 0 0 12px;
+
+    }
+  }
+
+  &__item-ttl-img {
+    width: 70px;
+
+    @include tab {
+      width: 50px;
+    }
+  }
+
+  &__item-ttl-text {
+    font-size: 28px;
+
+    @include tab {
+      font-size: 20px;
+
+    }
+  }
+
+  &__item-text {
+    margin: 0 0 0 60px;
+  }
+
+  &__item-span {
+color: #e53636;
+
+  }
+
+  &__text-wrap {
+max-width: 1280px;
+margin: 80px auto 0;
+
+@include sp{
+  margin: 40px auto 0;
+
+}
+  }
+
+  &__text {
+    text-align: right;
+    font-size: 14px;
+
+    @include sp{
+    text-align: left;
+    font-size: 12px;
+    }
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+}
+
+//  他社との比較
+.dezakure-comparison {
+  background-color: #e7d7df;
+
+  &__img {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  &__text-wrap {
+    max-width: 1080px;
+    margin: 20px auto 0;
+    
+      }
+    
+      &__text {
+        text-align: right;
+        font-size: 14px;
+    
+        @include sp{
+        text-align: left;
+        font-size: 12px;
+        }
+      }
+  &__ {}
+}
+
+//  料金プラン
+.dezakure-price {
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include tab{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {}
+
+  &__table {
+    border: 2px solid #bcbcbc;
+	border-collapse: collapse;
+  text-align: center;  
+}
+
+  &__tr {}
+
+  &__td {
+    border: 2px solid #bcbcbc;
+    border-collapse: collapse;
+    padding: 8px;
+
+    @include sp{
+      padding: 4px;
+
+    }
+  }
+
+  &__th {
+    border: 2px solid #bcbcbc;
+    border-collapse: collapse;
+    background-color: #aad3e4;
+    color: #fff;
+    font-size: 26px;
+    padding: 8px;
+
+    &--s {
+      background-color: #5bafd3;
+
+    }
+
+    &--p {
+      background-color: #16759e;
+
+    }
+  }
+
+  &__text-wrap {
+    max-width: 1080px;
+    margin: 16px auto 60px;
+    
+      }
+    
+      &__text {
+        text-align: right;
+        font-size: 14px;
+    
+        @include sp{
+        text-align: left;
+        font-size: 12px;
+        }
+      }
+
+  &__btn {
+
   }
 
   &__ {}
@@ -1314,18 +1575,3 @@ LP（デザクレ）
 
   &__ {}
 }
-
-//  メインビジュアル
-.dezakure-main {
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-}
-
