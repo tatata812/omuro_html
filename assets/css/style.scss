@@ -1155,7 +1155,7 @@ LP（デザクレ）
     display: flex;
     gap: 80px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
 
     @include pc {
       gap: 40px;
@@ -1197,7 +1197,7 @@ LP（デザクレ）
   }
 
   &__item-ttl-span {
-    background: linear-gradient(transparent 60%, #ff6 60%);
+    background: linear-gradient(transparent 60%, #f1c101 60%);
   }
 
   &__img-wrap {
@@ -1348,12 +1348,21 @@ LP（デザクレ）
   }
 
   &__text-span {
-    background: linear-gradient(transparent 60%, #ff6 60%);
-
+    background: linear-gradient(transparent 60%, #f1c101 60%);
   }
 
   &__text-wrap {
     text-align: center;
+  }
+
+  &__img01 {
+    max-width: 680px;
+    margin: 28px auto 0;
+  }
+
+  &__img02 {
+    max-width: 1080px;
+    margin: 28px auto 0;
   }
 }
 
@@ -1362,6 +1371,10 @@ LP（デザクレ）
 
   &__ttl {
     margin: 0 0 48px;
+  }
+
+  &__ttl-span {
+    background: linear-gradient(transparent 60%, #f1c101 60%);
   }
 
   &__item {
@@ -1375,7 +1388,7 @@ LP（デザクレ）
     gap: 16px;
     margin: 0 0 24px;
 
-    @include tab{
+    @include tab {
       margin: 0 0 12px;
 
     }
@@ -1403,43 +1416,30 @@ LP（デザクレ）
   }
 
   &__item-span {
-color: #e53636;
+    color: #e53636;
 
   }
 
   &__text-wrap {
-max-width: 1280px;
-margin: 80px auto 0;
+    max-width: 1280px;
+    margin: 80px auto 0;
 
-@include sp{
-  margin: 40px auto 0;
+    @include sp {
+      margin: 40px auto 0;
 
-}
+    }
   }
 
   &__text {
     text-align: right;
     font-size: 14px;
 
-    @include sp{
-    text-align: left;
-    font-size: 12px;
+    @include sp {
+      text-align: left;
+      font-size: 12px;
     }
   }
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
 }
 
 //  他社との比較
@@ -1454,18 +1454,19 @@ margin: 80px auto 0;
   &__text-wrap {
     max-width: 1080px;
     margin: 20px auto 0;
-    
-      }
-    
-      &__text {
-        text-align: right;
-        font-size: 14px;
-    
-        @include sp{
-        text-align: left;
-        font-size: 12px;
-        }
-      }
+
+  }
+
+  &__text {
+    text-align: right;
+    font-size: 14px;
+
+    @include sp {
+      text-align: left;
+      font-size: 12px;
+    }
+  }
+
   &__ {}
 }
 
@@ -1479,7 +1480,7 @@ margin: 80px auto 0;
     max-width: 1200px;
     margin: 0 auto;
 
-    @include tab{
+    @include tab {
       flex-direction: column;
       align-items: center;
     }
@@ -1489,9 +1490,9 @@ margin: 80px auto 0;
 
   &__table {
     border: 2px solid #bcbcbc;
-	border-collapse: collapse;
-  text-align: center;  
-}
+    border-collapse: collapse;
+    text-align: center;
+  }
 
   &__tr {}
 
@@ -1500,7 +1501,7 @@ margin: 80px auto 0;
     border-collapse: collapse;
     padding: 8px;
 
-    @include sp{
+    @include sp {
       padding: 4px;
 
     }
@@ -1515,12 +1516,12 @@ margin: 80px auto 0;
     padding: 8px;
 
     &--s {
-      background-color: #5bafd3;
+      background-color: #2683d6;
 
     }
 
     &--p {
-      background-color: #16759e;
+      background-color: #07589e;
 
     }
   }
@@ -1528,38 +1529,58 @@ margin: 80px auto 0;
   &__text-wrap {
     max-width: 1080px;
     margin: 16px auto 60px;
-    
-      }
-    
-      &__text {
-        text-align: right;
-        font-size: 14px;
-    
-        @include sp{
-        text-align: left;
-        font-size: 12px;
-        }
-      }
-
-  &__btn {
 
   }
 
-  &__ {}
+  &__text {
+    text-align: right;
+    font-size: 14px;
+
+    @include sp {
+      text-align: left;
+      font-size: 12px;
+    }
+  }
+
+  &__btn {}
+
 }
 
-//  メインビジュアル
-.dezakure-main {
+//  お客様の声
+.dezakure-voice {
+  background-color: #c1d1db;
 
-  &__ {}
+  &__ttl {
+    margin: 0 0 48px;
+  }
 
-  &__ {}
+  &__item {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 16px;
+  }
 
-  &__ {}
+  &__item-inner {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
 
-  &__ {}
+  &__item-img {
 
-  &__ {}
+    img {
+      width: 180px;
+
+      @include tab {
+        width: 100px;
+
+      }
+    }
+  }
+
+  &__item-text {}
 }
 
 //  メインビジュアル
