@@ -1591,6 +1591,11 @@ LP（デザクレ）
     display: flex;
     gap: 40px;
     align-items: center;
+
+    @include sp{
+      gap: 20px;
+
+    }
   }
 
   &__item-img {
